@@ -1,5 +1,5 @@
 const request = require("supertest");
-const app = require("../src/app");
+const app = require("./app");
 
 describe("POST /login", () => {
   it("retourne un token avec des identifiants valides", async () => {
