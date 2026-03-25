@@ -82,7 +82,7 @@ jobs:
         run: npm test -- --coverage
 
       - name: Analyse SonarQube
-        continue-on-error: true   # IMPORTANT (sinon ça bloque tout)
+        # continue-on-error: true   # IMPORTANT (sinon ça bloque tout)
         uses: SonarSource/sonarqube-scan-action@master
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
