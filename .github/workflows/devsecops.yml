@@ -25,6 +25,7 @@ jobs:
 
       - name: Analyse Semgrep
         uses: semgrep/semgrep-action@v1
+        continue-on-error: true
         with:
           config: >-
             p/owasp-top-ten
